@@ -29,12 +29,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | DEL  |
-// |      |     |     |     |     |     |   |     |     |     |     |     |  ;   |
+// |  WIN |     |     |     |     |     |   |     |     |     |     |     |  ;   |
 // |      |     |     |     |     |     |   |     |     |  [  |  ]  |  \  |  =   |
 //                    |     |     |     |   |     | GUI |     |
                         bindings = <
    &kp ESC    &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &kp DEL
-   &trans     &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans   &trans   &kp SEMI
+   &kp LGUI   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans   &trans   &kp SEMI
    &trans     &trans   &trans   &trans   &trans   &trans     &trans   &trans   &kp LBKT &kp RBKT &kp BSLH &kp EQUAL
                           	    &trans   &trans   &trans     &trans   &trans    &trans
                         >;
@@ -44,12 +44,12 @@
 // -----------------------------------------------------------------------------------------
 // |GRAVE |     |     |     |     |OUTSB|   |     |     |UP   |     |PG_UP |HOME  |
 // |BTCLR | BT0 | BT1 | BT2 | BT3 | BT4 |   |     | LFT | DWN |RGT  |PG_DN |END   |
-// |WIN   |OUTBT|     |     |     |     |   |     |     |     |     |      |      |
+// |      |OUTBT|     |     |     |     |   |     |     |     |     |      |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
    &kp GRAVE  &trans       &trans       &trans       &trans       &out OUT_USB   &trans    &trans    &kp UP    &trans    &kp PG_UP &kp HOME
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans    &kp LEFT  &kp DOWN  &kp RIGHT &kp PG_DN &kp END
-   &kp LGUI     &out OUT_BLE &trans       &trans       &trans       &trans       &trans    &trans    &trans    &trans    &trans    &trans
+   &trans     &out OUT_BLE &trans       &trans       &trans       &trans       &trans    &trans    &trans    &trans    &trans    &trans
                     	                  &trans       &trans       &trans       &trans    &trans    &trans
                         >;
                 };
